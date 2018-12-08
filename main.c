@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 
 int main(void) {
@@ -30,5 +31,6 @@ int main(void) {
     printf("%s\n", newstr);
     memset(&newstr, 0, strSize);
     shift = 0;
+    free(str);
   }
 }
